@@ -24,7 +24,6 @@ public:
     }
 
     int getCurrentResult() const {
-        // Example computation: square of value, scaled by step progress
         double progress = static_cast<double>(currentStep) / steps;
         return static_cast<int>(value * value * progress);
     }
@@ -151,4 +150,5 @@ int main() {
     simulator.execute();
 
     return 0;
+
 }
